@@ -4,7 +4,9 @@ function App() {
   return (
     <>
       <section id='center'>
-        <h1>Hello clockheads</h1>
+        <div className='container'>
+          <h1>Hello clockheads</h1>
+        </div>
       </section>
     </>
   )

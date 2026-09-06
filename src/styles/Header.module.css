@@ -1,0 +1,32 @@
+.header {
+  padding: 20px 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: var(--card-bg);
+  padding: 10px 30px 15px;
+  border-radius: 50px;
+}
