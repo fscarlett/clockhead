@@ -7,7 +7,7 @@ function Header() {
         <div className={styles['nav-wrapper']}>
           <div className={styles['nav-left']}>
             <a href='/' className={styles['nav-logo']}>
-              <img src='/logo.svg' alt='Clockhead Logo' />
+              <img src='/clockhead-logo-01-small.png' alt='Clockhead Logo' />
             </a>
             <nav className={styles['nav-menu']}>
               <a href='/about' className={styles['nav-link']}>
@@ -21,7 +21,7 @@ function Header() {
           <div className={styles['nav-right']}>
             <div className={styles['nav-menu']}>
               <a href='/docs' className={styles['nav-link']}>
-                Docs
+                Support
               </a>
             </div>
           </div>

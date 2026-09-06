@@ -6,3 +6,27 @@
   background-color: var(--card-bg);
   border-top: 1px solid var(--border);
 }
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right p {
+  font-size: 14px;
+  color: var(--text);
+}
