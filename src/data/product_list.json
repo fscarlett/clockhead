@@ -14,6 +14,7 @@
     "description": "A sleek and modern take on the classic Clockhead design.",
     "price": 59.99,
     "tags": ["modern", "sleek"],
+    "sale": false,
     "image": ""
   },
   {
@@ -22,6 +23,7 @@
     "description": "A vintage-inspired Clockhead for nostalgia freaks.",
     "price": 69.99,
     "tags": ["vintage", "nostalgic"],
+    "sale": false,
     "image": ""
   },
   {
@@ -30,6 +32,7 @@
     "description": "Straight back to the 1970s for you",
     "price": 49.99,
     "tags": ["retro", "digital"],
+    "sale": false,
     "image": ""
   },
   {
@@ -38,6 +41,7 @@
     "description": "Pretentious, yet overbearing.",
     "price": 59.99,
     "tags": ["natural", "epic"],
+    "sale": false,
     "image": ""
   },
   {

@@ -7,10 +7,10 @@ function ProductCard({
     id: number
     name: string
     description: string
-    image: string
+    price: number
     tags?: string[]
     sale: boolean
-    price: number
+    image: string
   }
 }) {
   const productImage = product.image || '/hello-kitty-wall-clock-small.png' // Default image if none provided
