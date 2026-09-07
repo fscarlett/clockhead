@@ -11,7 +11,7 @@ function ProductCard() {
         <p>product description</p>
       </div>
       <div className={styles['product-card-image-wrapper']}>
-        <img src='/path/to/image.jpg' alt='product name' />
+        <img src='/hello-kitty-wall-clock-small.png' alt='default product' />
       </div>
     </div>
   )
