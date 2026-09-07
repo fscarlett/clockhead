@@ -4,12 +4,12 @@ import Products from './components/Products'
 function App() {
   return (
     <>
-      <section id='center'>
+      <main className='main'>
         <div className='container'>
           <h1>Hello clockheads</h1>
           <Products />
         </div>
-      </section>
+      </main>
     </>
   )
 }

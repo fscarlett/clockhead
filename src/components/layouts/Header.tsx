@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router'
 import styles from '../../styles/Header.module.css'
 
 function Header() {
@@ -6,23 +7,29 @@ function Header() {
       <div className='container '>
         <div className={styles['nav-wrapper']}>
           <div className={styles['nav-left']}>
-            <a href='/' className={styles['nav-logo']}>
+            <NavLink to='/' className={styles['nav-logo']}>
               <img src='/clockhead-logo-01-small.png' alt='Clockhead Logo' />
-            </a>
+            </NavLink>
             <nav className={styles['nav-menu']}>
-              <a href='/about' className={styles['nav-link']}>
-                About
-              </a>
-              <a href='/blog' className={styles['nav-link']}>
+              <NavLink to='/about' className={styles['nav-link']}>
+                About Us
+              </NavLink>
+              <NavLink to='/shop' className={styles['nav-link']}>
+                Shop
+              </NavLink>
+              <NavLink to='/blog' className={styles['nav-link']}>
                 Blog
-              </a>
+              </NavLink>
+              <NavLink to='/finder' className={styles['nav-link']}>
+                Store Finder
+              </NavLink>
             </nav>
           </div>
           <div className={styles['nav-right']}>
             <div className={styles['nav-menu']}>
-              <a href='/docs' className={styles['nav-link']}>
+              <NavLink to='/support' className={styles['nav-link']}>
                 Support
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
