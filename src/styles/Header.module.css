@@ -27,8 +27,23 @@
   flex-direction: row;
   gap: 20px;
   background-color: var(--card-bg);
-  padding: 10px 30px 15px;
+  padding: 0 30px;
   border-radius: 50px;
+}
+
+.nav-menu a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 15px 10px;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+  background-color: #777;
 }
 
 .nav-logo img {

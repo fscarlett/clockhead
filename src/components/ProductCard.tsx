@@ -9,6 +9,7 @@ function ProductCard({
     description: string
     image: string
     tags?: string[]
+    sale: boolean
     price: number
   }
 }) {
@@ -16,7 +17,10 @@ function ProductCard({
   return (
     <div className={styles['product-card']}>
       <div className={styles['product-card-header']}>
-        <p>{product.tags?.join(', ')}</p>
+        <span>{product.tags?.join(' ')}</span>
+        {product.sale && (
+          <span className={styles['product-card-sale']}>On Sale</span>
+        )}
       </div>
       <div className={styles['product-card-body']}>
         <h2>{product.name}</h2>

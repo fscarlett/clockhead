@@ -6,7 +6,8 @@ function App() {
     <>
       <main className='main'>
         <div className='container'>
-          <h1>Hello clockheads</h1>
+          <p className='tagline'>what time is it</p>
+          <h1>It's Clockhead Time</h1>
           <Products />
         </div>
       </main>

@@ -11,11 +11,21 @@
 }
 
 .product-card-header {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 16px;
+}
+
+.product-card-sale {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  background-color: pink;
+  padding: 4px 8px;
+  border-radius: 10px;
 }
 
 .product-card-body {

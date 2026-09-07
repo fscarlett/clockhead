@@ -9,6 +9,8 @@ import BlogPage from './pages/Blog.tsx'
 import StoreFinderPage from './pages/StoreFinder.tsx'
 import ShopPage from './pages/Shop.tsx'
 import SupportPage from './pages/Support.tsx'
+import PrivacyPolicyPage from './pages/PrivacyPolicy.tsx'
+import TermsOfServicePage from './pages/TermsOfService.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -21,6 +23,8 @@ createRoot(document.getElementById('root')!).render(
           <Route path='/blog' element={<BlogPage />} />
           <Route path='/finder' element={<StoreFinderPage />} />
           <Route path='/support' element={<SupportPage />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
+          <Route path='/terms-of-service' element={<TermsOfServicePage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

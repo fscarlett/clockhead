@@ -24,9 +24,16 @@
 .footer-right {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .footer-right p {
   font-size: 14px;
   color: var(--text);
+}
+
+.footer-logo img {
+  width: 45px;
+  height: auto;
 }

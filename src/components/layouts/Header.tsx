@@ -4,7 +4,7 @@ import styles from '../../styles/Header.module.css'
 function Header() {
   return (
     <header className={styles.header}>
-      <div className='container '>
+      <div className='header-container'>
         <div className={styles['nav-wrapper']}>
           <div className={styles['nav-left']}>
             <NavLink to='/' className={styles['nav-logo']}>

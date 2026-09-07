@@ -4,6 +4,8 @@
     "name": "Clockhead Classic",
     "description": "The original Clockhead, a timeless design for any room.",
     "price": 49.99,
+    "tags": ["classic", "timeless", "original"],
+    "sale": true,
     "image": ""
   },
   {
@@ -11,13 +13,15 @@
     "name": "Clockhead Modern",
     "description": "A sleek and modern take on the classic Clockhead design.",
     "price": 59.99,
+    "tags": ["modern", "sleek"],
     "image": ""
   },
   {
     "id": 3,
     "name": "Clockhead Vintage",
-    "description": "A vintage-inspired Clockhead for those who love a touch of nostalgia.",
+    "description": "A vintage-inspired Clockhead for nostalgia freaks.",
     "price": 69.99,
+    "tags": ["vintage", "nostalgic"],
     "image": ""
   },
   {
@@ -25,6 +29,7 @@
     "name": "Table Flip",
     "description": "Straight back to the 1970s for you",
     "price": 49.99,
+    "tags": ["retro", "digital"],
     "image": ""
   },
   {
@@ -32,6 +37,7 @@
     "name": "Etched In Stone",
     "description": "Pretentious, yet overbearing.",
     "price": 59.99,
+    "tags": ["natural", "epic"],
     "image": ""
   },
   {
@@ -39,6 +45,8 @@
     "name": "Young Marble Giant",
     "description": "Et tu, clockhead?",
     "price": 69.99,
+    "tags": ["roman", "epic"],
+    "sale": true,
     "image": ""
   }
 ]
