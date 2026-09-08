@@ -3,7 +3,7 @@ import styles from '../styles/Products.module.css'
 
 import productList from '../data/product_list.json'
 
-// TODO: Add an order prop to allow different ordering of products, e.g., by price, name, or sale status.
+// TODO: Add an order prop to allow different ordering of products, e.g., by (price), name, default, or sale status.
 
 function Products() {
   return (

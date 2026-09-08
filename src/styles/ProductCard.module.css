@@ -19,6 +19,23 @@
   padding: 10px 16px;
 }
 
+.product-card-tag {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text);
+  background-color: var(--pill-bg);
+  padding: 4px 15px;
+  border-radius: 30px;
+}
+
+.tags-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
 .product-card-sale {
   font-size: 14px;
   font-weight: 500;

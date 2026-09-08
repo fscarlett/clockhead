@@ -17,7 +17,13 @@ function ProductCard({
   return (
     <div className={styles['product-card']}>
       <div className={styles['product-card-header']}>
-        <span>{product.tags?.join(' ')}</span>
+        <div className={styles['tags-wrapper']}>
+          {product.tags?.map((tag) => (
+            <span key={tag} className={styles['product-card-tag']}>
+              {tag}
+            </span>
+          ))}
+        </div>
         {product.sale && (
           <span className={styles['product-card-sale']}>On Sale</span>
         )}

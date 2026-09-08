@@ -4,7 +4,7 @@
     "name": "Clockhead Classic",
     "description": "Right up there with your favorite beverage.",
     "price": 49.99,
-    "tags": ["classic", "timeless", "original"],
+    "tags": ["classic", "timeless"],
     "sale": true,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832838/clockhead/clock-31_simh59.jpg"
   },
@@ -13,7 +13,7 @@
     "name": "Chromepunk",
     "description": "Let your visitors know you mean business.",
     "price": 59.99,
-    "tags": ["modern", "sleek"],
+    "tags": ["modern", "brutal"],
     "sale": false,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832839/clockhead/clock-33_tnjibc.jpg"
   },
@@ -22,7 +22,7 @@
     "name": "Atomic Madness",
     "description": "Contains no radium but you may get a tan anyway.",
     "price": 69.99,
-    "tags": ["vintage", "nostalgic"],
+    "tags": ["vintage", "bunker-ready"],
     "sale": false,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832838/clockhead/clock-34_zdp2bn.jpg"
   },
@@ -58,7 +58,7 @@
     "name": "Jade Bird",
     "description": "Keep your dynasty strong and your enemies subdued.",
     "price": 79.99,
-    "tags": ["timeless", "classic"],
+    "tags": ["timeless", "gaudy"],
     "sale": false,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832839/clockhead/clock-32_a0b9fw.jpg"
   },
@@ -67,7 +67,7 @@
     "name": "Boardroom Memories",
     "description": "Sends a message to your competitors.",
     "price": 89.99,
-    "tags": ["artistic", "timeless"],
+    "tags": ["corporate", "ruthless"],
     "sale": false,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832872/clockhead/clock-23_h2xacy.jpg"
   },
@@ -76,7 +76,7 @@
     "name": "New Stone Age",
     "description": "Ancient secrets are tomorrow's treasures.",
     "price": 99.99,
-    "tags": ["classic", "timeless"],
+    "tags": ["90's af", "organic"],
     "sale": false,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832872/clockhead/clock-24_hixbsi.jpg"
   },
@@ -85,16 +85,16 @@
     "name": "Padded Shoulders",
     "description": "Are you ready to take on the world like it's the 80's again? This clockhead is.",
     "price": 109.99,
-    "tags": ["artistic", "timeless"],
+    "tags": ["retro", "assertive"],
     "sale": false,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832873/clockhead/clock-21_s2q1m4.jpg"
   },
   {
     "id": 11,
     "name": "The Wheel",
-    "description": "Don't reinvent it, just let it turn. ",
+    "description": "Don't reinvent it, let it turn. ",
     "price": 119.99,
-    "tags": ["artistic", "timeless"],
+    "tags": ["minimalist", "prehistoric"],
     "sale": false,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832873/clockhead/clock-22_rx02ab.jpg"
   }
