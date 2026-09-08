@@ -11,6 +11,7 @@ import ShopPage from './pages/Shop.tsx'
 import SupportPage from './pages/Support.tsx'
 import PrivacyPolicyPage from './pages/PrivacyPolicy.tsx'
 import TermsOfServicePage from './pages/TermsOfService.tsx'
+import ProductPage from './pages/Product.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -20,6 +21,8 @@ createRoot(document.getElementById('root')!).render(
           <Route path='/' element={<App />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/shop' element={<ShopPage />} />
+          <Route path='/product/:productId' element={<ProductPage />} />
+
           <Route path='/blog' element={<BlogPage />} />
           <Route path='/finder' element={<StoreFinderPage />} />
           <Route path='/support' element={<SupportPage />} />
