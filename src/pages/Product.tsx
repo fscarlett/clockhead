@@ -4,7 +4,7 @@ import styles from '../styles/Product.module.css'
 
 function ProductPage() {
   const { productId } = useParams<{ productId: string }>()
-  const pId = parseInt(productId, 10) || ''
+  const pId = parseInt(productId ?? '', 10) || ''
 
   const product = productList.find((p) => p.id === pId)
 
