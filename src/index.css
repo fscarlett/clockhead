@@ -141,6 +141,7 @@ p {
 
 .main {
   min-height: 65vh;
+  padding: 10px 0 60px;
 }
 
 .tagline {
