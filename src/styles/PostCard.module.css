@@ -1,0 +1,38 @@
+.post-card-wrapper {
+  width: 100%;
+}
+
+.post-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.post-card-image-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.post-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.post-card-header h2 {
+  font-size: 36px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+}
