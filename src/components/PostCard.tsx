@@ -13,7 +13,7 @@ function PostCard({ id }: { id: number }) {
     image: '/hello-kitty-wall-clock-small.png',
   }
   useEffect(() => {
-    fetch('https://random-word-api.herokuapp.com/word?number=4&length=7')
+    fetch('https://random-word-api.herokuapp.com/word?number=4&length=6&diff=1')
       .then((response) => response.json())
       .then((data) => {
         setFetchTitle(data.join(' '))
@@ -26,7 +26,7 @@ function PostCard({ id }: { id: number }) {
 
   return (
     <div className={styles['post-card-wrapper']}>
-      <Link to='/blog' className={styles['post-card-link']}>
+      <Link to={`/blog/${id}`} className={styles['post-card-link']}>
         <div className={styles['post-card']}>
           <div className={styles['post-card-image-wrapper']}>
             <img
