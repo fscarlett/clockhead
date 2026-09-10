@@ -4,25 +4,36 @@ import styles from '../styles/PostCard.module.css'
 
 function PostCard({ id }: { id: number }) {
   const [fetchTitle, setFetchTitle] = useState('')
-  const [loading, setLoading] = useState(true)
+  const [fetchExcerpt, setFetchExcerpt] = useState('')
+  const [loadingTitle, setLoadingTitle] = useState(true)
+  const [loadingExcerpt, setLoadingExcerpt] = useState(true)
 
   const post = {
     id: id,
-    title: '',
-    excerpt: 'this is the dummmmmy excerpt',
+    title: '...',
+    excerpt: '...',
     image: '/hello-kitty-wall-clock-small.png',
   }
   useEffect(() => {
-    fetch('https://random-word-api.herokuapp.com/word?number=4&length=6&diff=1')
+    fetch('https://random-word-api.herokuapp.com/word?number=5&length=4&diff=1')
       .then((response) => response.json())
       .then((data) => {
         setFetchTitle(data.join(' '))
-        setLoading(false)
+        setLoadingTitle(false)
+      })
+      .catch((error) => console.error('Error:', error))
+
+    fetch('https://random-word-api.herokuapp.com/word?number=15&diff=1')
+      .then((response) => response.json())
+      .then((data) => {
+        setFetchExcerpt(data.join(' '))
+        setLoadingExcerpt(false)
       })
       .catch((error) => console.error('Error:', error))
   }, [])
 
-  post.title = loading ? post.title : fetchTitle
+  post.title = loadingTitle ? post.title : fetchTitle
+  post.excerpt = loadingExcerpt ? post.excerpt : fetchExcerpt
 
   return (
     <div className={styles['post-card-wrapper']}>
@@ -40,7 +51,7 @@ function PostCard({ id }: { id: number }) {
               <h2>{post.title}</h2>
             </div>
             <div className={styles['post-card-body']}>
-              <p>{post.excerpt}</p>
+              <p>{post.excerpt} </p>
             </div>
           </div>
         </div>
