@@ -37,7 +37,10 @@ function PostCard({ id }: { id: number }) {
 
   return (
     <div className={styles['post-card-wrapper']}>
-      <Link to={`/blog/${id}`} className={styles['post-card-link']}>
+      <Link
+        to={`/blog/${post.id}/?t=${post.title}&e=${post.excerpt}`}
+        className={styles['post-card-link']}
+      >
         <div className={styles['post-card']}>
           <div className={styles['post-card-image-wrapper']}>
             <img
