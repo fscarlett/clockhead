@@ -144,6 +144,10 @@ p {
   padding: 10px 0 60px;
 }
 
+.content-wrapper {
+  width: 100%;
+}
+
 .tagline {
   font-size: 18px;
   text-transform: uppercase;

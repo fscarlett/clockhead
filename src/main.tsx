@@ -6,6 +6,7 @@ import Layout from './components/layouts/Layout.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import AboutPage from './pages/About.tsx'
 import BlogPage from './pages/Blog.tsx'
+import PostPage from './pages/Post.tsx'
 import StoreFinderPage from './pages/StoreFinder.tsx'
 import ShopPage from './pages/Shop.tsx'
 import SupportPage from './pages/Support.tsx'
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path='/product/:productId' element={<ProductPage />} />
 
           <Route path='/blog' element={<BlogPage />} />
+          <Route path='/blog/:postId' element={<PostPage />} />
           <Route path='/finder' element={<StoreFinderPage />} />
           <Route path='/support' element={<SupportPage />} />
           <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
