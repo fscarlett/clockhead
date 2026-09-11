@@ -33,7 +33,7 @@
     "price": 49.99,
     "tags": ["retro", "digital"],
     "sale": false,
-    "image": ""
+    "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1789092502/clockhead/clock-11_yp3vgv.jpg"
   },
   {
     "id": 5,
@@ -42,16 +42,16 @@
     "price": 59.99,
     "tags": ["natural", "epic"],
     "sale": false,
-    "image": ""
+    "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1789092502/clockhead/clock-14_nlgpzp.jpg"
   },
   {
     "id": 6,
     "name": "Young Marble Giant",
-    "description": "Et tu, clockhead?",
+    "description": "Don't be alarmed.",
     "price": 69.99,
-    "tags": ["roman", "epic"],
+    "tags": ["postwar", "epic"],
     "sale": true,
-    "image": ""
+    "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1789092502/clockhead/clock-13_ul6z8g.jpg"
   },
   {
     "id": 7,
@@ -97,5 +97,50 @@
     "tags": ["minimalist", "prehistoric"],
     "sale": false,
     "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1788832873/clockhead/clock-22_rx02ab.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Golden Machine",
+    "description": "Isaac Newton or Louis XIV, your choice.",
+    "price": 119.99,
+    "tags": ["baroque", "enlightenment"],
+    "sale": false,
+    "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1789092502/clockhead/clock-12_h2ampn.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Wall Classic",
+    "description": "The distinguished choice.",
+    "price": 59.99,
+    "tags": ["basic", "safe"],
+    "sale": false,
+    "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1789092454/clockhead/clock-44_x2djsc.png"
+  },
+  {
+    "id": 14,
+    "name": "Rustic AF",
+    "description": "Ford Bronco not included.",
+    "price": 49.99,
+    "tags": ["rustic", "faux country"],
+    "sale": true,
+    "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1789092454/clockhead/clock-41_in9hdm.png"
+  },
+  {
+    "id": 15,
+    "name": "Copper Age",
+    "description": "Expect this to become more desirable in the near future.",
+    "price": 119.99,
+    "tags": ["metallic", "theft risk"],
+    "sale": false,
+    "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1789092454/clockhead/clock-43_ipitcu.png"
+  },
+  {
+    "id": 16,
+    "name": "Forum Takeover",
+    "description": "Et tu, clockhead?",
+    "price": 119.99,
+    "tags": ["marble", "imperial"],
+    "sale": true,
+    "image": "https://res.cloudinary.com/foxscarlett/image/upload/v1789092454/clockhead/clock-42_dojyef.png"
   }
 ]
