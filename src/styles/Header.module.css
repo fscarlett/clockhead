@@ -40,6 +40,12 @@
   padding: 15px 10px;
 }
 
+.nav-menu a.active {
+  text-decoration: underline;
+  color: var(--accent);
+  background-color: #777;
+}
+
 .nav-menu a:hover {
   text-decoration: underline;
   color: var(--accent);

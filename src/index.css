@@ -80,10 +80,11 @@ a:hover {
   text-decoration: underline;
 }
 
-a.active {
+/* a.active {
   text-decoration: underline;
-  color: purple;
-}
+  color: var(--accent);
+  background: var(--accent-bg);
+} */
 
 h1,
 h2 {
