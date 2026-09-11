@@ -7,7 +7,8 @@ import styles from '../styles/Post.module.css'
 function PostPage() {
   const [fetchBody, setFetchBody] = useState('')
   const [loadingBody, setLoadingBody] = useState(true)
-  const { id } = useParams()
+  const { postId } = useParams<{ postId: string }>()
+  const id = parseInt(postId ?? '', 10) || ''
 
   const [searchParams] = useSearchParams()
   const titleFromQuery = searchParams.get('t')
@@ -32,18 +33,18 @@ function PostPage() {
   }, [])
 
   post.body = loadingBody ? post.body : fetchBody
+  post.title = titleFromQuery ? titleFromQuery + ' ' + post.id : post.title
+  post.excerpt = excerptFromQuery ? excerptFromQuery : post.excerpt
 
   return (
     <main className='main'>
       <div className='container'>
         <p className='tagline'>clockhead blog</p>
-        <h1 className={styles['post-title']}>
-          {titleFromQuery ?? post.title + ' ' + post.id}
-        </h1>
+        <h1 className={styles['post-title']}>{post.title}</h1>
         <div className={styles['post-content-wrapper']}>
           <img src={post.image} alt={post.title} width='300' height='300' />
           <p className={styles['post-body']}>
-            {(excerptFromQuery ?? post.excerpt) + ' ' + post.body}
+            {post.excerpt + ' ' + post.body}
           </p>
         </div>
       </div>
