@@ -1,6 +1,14 @@
 import { Link } from 'react-router'
 import styles from '../styles/ProductCard.module.css'
 
+const bgArray = [
+  'var(--a7)',
+  'var(--accent)',
+  'var(--a3)',
+  'var(--a4)',
+  'var(--a6)',
+]
+
 function ProductCard({
   product,
 }: {
@@ -14,14 +22,21 @@ function ProductCard({
     image: string
   }
 }) {
+  const productBg = bgArray[product.id % bgArray.length]
+
   const productImage = product.image || '/hello-kitty-wall-clock-small.png' // Default image if none provided
+
+  const cardStyle = {
+    backgroundColor: productBg,
+  }
+
   return (
     <div>
       <Link
         to={`/product/${product.id}`}
         className={styles['product-card-link']}
       >
-        <div className={styles['product-card']}>
+        <div className={`${styles['product-card']}`} style={cardStyle}>
           <div className={styles['product-card-header']}>
             <div className={styles['tags-wrapper']}>
               {product.tags?.map((tag) => (
