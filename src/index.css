@@ -132,13 +132,6 @@ p {
   align-items: flex-start;
 }
 
-.header-container {
-  width: 100%;
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 .footer-container {
   width: 100%;
   max-width: 1250px;

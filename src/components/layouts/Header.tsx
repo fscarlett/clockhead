@@ -7,38 +7,66 @@ const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
 
 function Header() {
   return (
-    <header className={styles.header}>
-      <div className='header-container'>
-        <div className={styles['nav-wrapper']}>
-          <div className={styles['nav-left']}>
-            <NavLink to='/' className={styles['nav-logo']}>
-              <img src='/clockhead-logo-01-small.png' alt='Clockhead Logo' />
-            </NavLink>
-            <nav className={styles['nav-menu']}>
-              <NavLink to='/about' className={navLinkClassName}>
-                About Us
+    <>
+      <header className={styles['header']}>
+        <div className={styles['header-container']}>
+          <div className={styles['nav-wrapper']}>
+            <div className={styles['nav-left']}>
+              <NavLink to='/' className={styles['nav-logo']}>
+                <img src='/clockhead-logo-01-small.png' alt='Clockhead Logo' />
               </NavLink>
-              <NavLink to='/shop' className={navLinkClassName}>
-                Shop
-              </NavLink>
-              <NavLink to='/blog' className={navLinkClassName}>
-                Blog
-              </NavLink>
-              <NavLink to='/finder' className={navLinkClassName}>
-                Store Finder
-              </NavLink>
-            </nav>
-          </div>
-          <div className={styles['nav-right']}>
-            <div className={styles['nav-menu']}>
-              <NavLink to='/support' className={navLinkClassName}>
-                Support
-              </NavLink>
+              <nav className={styles['nav-menu']}>
+                <NavLink to='/about' className={navLinkClassName}>
+                  About Us
+                </NavLink>
+                <NavLink to='/shop' className={navLinkClassName}>
+                  Shop
+                </NavLink>
+                <NavLink to='/blog' className={navLinkClassName}>
+                  Blog
+                </NavLink>
+                <NavLink to='/finder' className={navLinkClassName}>
+                  Store Finder
+                </NavLink>
+              </nav>
+            </div>
+            <div className={styles['nav-right']}>
+              <div className={styles['nav-menu']}>
+                <NavLink to='/support' className={navLinkClassName}>
+                  Support
+                </NavLink>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <header className={styles['header-mob']}>
+        <div className={styles['header-container-mob']}>
+          <NavLink to='/' className={styles['nav-logo-mob']}>
+            <img src='/clockhead-logo-01-small.png' alt='Clockhead Logo' />
+          </NavLink>
+          <nav className={styles['nav-menu-mob']}>
+            <NavLink to='/about' className={navLinkClassName}>
+              About Us
+            </NavLink>
+            <NavLink to='/shop' className={navLinkClassName}>
+              Shop
+            </NavLink>
+            <NavLink to='/blog' className={navLinkClassName}>
+              Blog
+            </NavLink>
+          </nav>
+          <nav className={styles['nav-menu-mob']}>
+            <NavLink to='/finder' className={navLinkClassName}>
+              Store Finder
+            </NavLink>
+            <NavLink to='/support' className={navLinkClassName}>
+              Support
+            </NavLink>
+          </nav>
+        </div>
+      </header>
+    </>
   )
 }
 export default Header
