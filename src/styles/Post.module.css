@@ -3,6 +3,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .post-content-wrapper {
@@ -17,4 +18,11 @@
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .post-content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
