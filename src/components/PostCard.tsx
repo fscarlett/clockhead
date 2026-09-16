@@ -15,21 +15,40 @@ function PostCard({ id }: { id: number }) {
     image: '/hello-kitty-wall-clock-small.png',
   }
   useEffect(() => {
-    fetch('https://random-word-api.herokuapp.com/word?number=5&length=4&diff=1')
+    const controller = new AbortController()
+    const { signal } = controller
+
+    fetch(
+      'https://random-word-api.herokuapp.com/word?number=5&length=4&diff=1',
+      { signal },
+    )
       .then((response) => response.json())
       .then((data) => {
         setFetchTitle(data.join(' '))
         setLoadingTitle(false)
       })
-      .catch((error) => console.error('Error:', error))
+      .catch((error) => {
+        if (error.name !== 'AbortError') {
+          console.error('Error fetching title:', error)
+        }
+      })
 
-    fetch('https://random-word-api.herokuapp.com/word?number=15&diff=1')
+    fetch('https://random-word-api.herokuapp.com/word?number=15&diff=1', {
+      signal,
+    })
       .then((response) => response.json())
       .then((data) => {
         setFetchExcerpt(data.join(' '))
         setLoadingExcerpt(false)
       })
-      .catch((error) => console.error('Error:', error))
+      .catch((error) => {
+        if (error.name !== 'AbortError') {
+          console.error('Error fetching excerpt:', error)
+        }
+      })
+    return () => {
+      controller.abort()
+    }
   }, [])
 
   post.title = loadingTitle ? post.title : fetchTitle

@@ -23,13 +23,24 @@ function PostPage() {
   }
 
   useEffect(() => {
-    fetch('https://random-word-api.herokuapp.com/word?number=60&diff=1')
+    const controller = new AbortController()
+    const { signal } = controller
+    fetch('https://random-word-api.herokuapp.com/word?number=60&diff=1', {
+      signal,
+    })
       .then((response) => response.json())
       .then((data) => {
         setFetchBody(data.join(' '))
         setLoadingBody(false)
       })
-      .catch((error) => console.error('Error:', error))
+      .catch((error) => {
+        if (error.name !== 'AbortError') {
+          console.error('Error fetching body:', error)
+        }
+      })
+    return () => {
+      controller.abort()
+    }
   }, [])
 
   post.body = loadingBody ? post.body : fetchBody
