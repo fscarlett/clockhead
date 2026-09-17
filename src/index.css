@@ -156,3 +156,9 @@ p {
   color: var(--text-contrast);
   margin: 10px 0 8px;
 }
+
+.map {
+  border: 1px solid #636363;
+  border-radius: 2px;
+  padding: 2px;
+}
