@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 
 const Location = () => {
   const [locationLoading, setLocationLoading] = useState(true)
-  const [latitude, setLatitude] = useState(null)
-  const [longitude, setLongitude] = useState(null)
+  const [latitude, setLatitude] = useState(0)
+  const [longitude, setLongitude] = useState(0)
   useEffect(() => {
     try {
       if (navigator.geolocation) {
@@ -19,7 +19,7 @@ const Location = () => {
           },
         )
       } else {
-        setLocationLoading(false)
+        // setLocationLoading(false)
       }
     } catch (error) {
       console.log('Something went wrong!', error)
