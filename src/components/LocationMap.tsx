@@ -29,7 +29,7 @@ const Location = () => {
 
   return (
     <>
-      <h3>Clockhead is everywhere</h3>
+      <h2>Clockhead is everywhere</h2>
       {!locationLoading ? (
         <div>
           {/* <p>Latitude: {latitude}</p> */}
